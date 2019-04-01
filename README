@@ -1,0 +1,17 @@
+# Downloader
+
+This is just a quick project I threw together to dowload some files quickly from a webserver. There is a ton missing
+from this but it got the job done. I didn't want to visit this site with a regular browser, and my bash skills aren't
+sharp enough to iterate through all this stuff and download it quickly.
+
+
+
+## Background
+I needed this stuff in a hurry because my domain got hijacked in the Google Search Console (GSC). Specifically, I had
+deleted a virtual server some time ago but failed to delete it's A record at my DNS provider. Somebody got a virtual
+host from my same hosting company today and was assigned my former public IP address. Since they now had a DNS record
+on my domain pointing to a new server that they controlled, they registered as owner of the domain with GSC and
+they were able to pass Google's verifiction of domain ownership. Once they were verified they uploaded a sitemap file
+to GSC. Because I had previously claimed ownership of the entire domain (the Bad Actor (BA) only proved ownership of a
+single host) I was notified via email that there was a new verified user for the host. I was able to quickly revoke
+the BA's rights to the host at GSC. [Google forum post on the hijack](https://support.google.com/webmasters/thread/2185736?hl=en)
